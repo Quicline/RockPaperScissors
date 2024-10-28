@@ -8,16 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var didWin: Bool = false
     @State private var playerSelection: String = ""
     @State private var computerSelectionVar: String = ""
     @State private var scoreTitle = ""
-    @State private var endScore = 0
-    @State private var score = 0 {
-            didSet {
-                endScore = oldValue
-            }
-        }
+    @State private var score = 0
     private var playerWin: Bool = false
     @State private var showReset: Bool = false
     private var selectionString = ["🪨","🧻","✂️"]
